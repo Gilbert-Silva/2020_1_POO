@@ -1,0 +1,10 @@
+C:\Users\gilbe\Source\Repos\Gilbert-Silva\2020_1_POO\Aula 07 VS\AreaApp\bin\Debug\AreaApp.exe.config
+C:\Users\gilbe\Source\Repos\Gilbert-Silva\2020_1_POO\Aula 07 VS\AreaApp\bin\Debug\AreaApp.exe
+C:\Users\gilbe\Source\Repos\Gilbert-Silva\2020_1_POO\Aula 07 VS\AreaApp\bin\Debug\AreaApp.pdb
+C:\Users\gilbe\Source\Repos\Gilbert-Silva\2020_1_POO\Aula 07 VS\AreaApp\obj\Debug\AreaApp.csprojAssemblyReference.cache
+C:\Users\gilbe\Source\Repos\Gilbert-Silva\2020_1_POO\Aula 07 VS\AreaApp\obj\Debug\AreaApp.csproj.CoreCompileInputs.cache
+C:\Users\gilbe\Source\Repos\Gilbert-Silva\2020_1_POO\Aula 07 VS\AreaApp\obj\Debug\AreaApp.exe
+C:\Users\gilbe\Source\Repos\Gilbert-Silva\2020_1_POO\Aula 07 VS\AreaApp\obj\Debug\AreaApp.pdb
+C:\Users\gilbe\Source\Repos\Gilbert-Silva\2020_1_POO\Aula 07 VS\AreaApp\bin\Debug\AreaLib.dll
+C:\Users\gilbe\Source\Repos\Gilbert-Silva\2020_1_POO\Aula 07 VS\AreaApp\bin\Debug\AreaLib.pdb
+C:\Users\gilbe\Source\Repos\Gilbert-Silva\2020_1_POO\Aula 07 VS\AreaApp\obj\Debug\AreaApp.csproj.CopyComplete
