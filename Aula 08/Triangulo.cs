@@ -6,10 +6,6 @@ class MainClass {
     x.b = 10;
     x.h = 20;
     Console.WriteLine(x.CalcArea());
-    Triangulo y = new Triangulo();
-    y.b = -10;
-    y.h = -20;
-    Console.WriteLine(y.CalcArea());
   }
 }  
 
