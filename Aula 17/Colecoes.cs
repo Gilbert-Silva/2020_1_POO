@@ -47,6 +47,7 @@ class MainClass {
     l2.Inserir(app2);
     foreach(Aplicativo app in l2.Listar())
       Console.WriteLine(app);
+ 
   }
 }
 

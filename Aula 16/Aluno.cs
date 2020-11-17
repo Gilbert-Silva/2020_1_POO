@@ -4,6 +4,20 @@ using System.Linq;
 
 class MainClass {
   public static void Main (string[] args) {
+    /*
+    var x1 = 10;
+    var x2 = "Teste";
+    var x3 = new Aluno("Pedro", DateTime.Parse("1992-01-01"));
+
+    Console.WriteLine(x1.GetType());
+    Console.WriteLine(x2.GetType());
+    Console.WriteLine(x3.GetType());
+
+    dynamic x4 = 10;
+    Console.WriteLine(x4.GetType());
+    x4 = "Teste";
+    Console.WriteLine(x4.GetType());
+  */
     Aluno a = new Aluno("Pedro", DateTime.Parse("1992-01-01"));
     Aluno b = new Aluno("Maria", DateTime.Parse("1993-01-01"));
     Aluno c = new Aluno("Paulo", DateTime.Parse("1991-02-01"));
@@ -25,6 +39,7 @@ class MainClass {
     Console.WriteLine("Professores aniversariantes");
     Relatorio.Aniversariantes(w, 1);
 
+
     IPessoa[] vw = { a, b, c, p1, p2 };
     Console.WriteLine("Todos aniversariantes");
     Relatorio.Aniversariantes(vw, 1);
@@ -41,10 +56,13 @@ class MainClass {
     foreach(Aluno y in t)
       Console.WriteLine(y);
     Console.WriteLine("Aniversariantes da turma");
+    /*var z = 
+      from Aluno y in t where y.Nascimento.Month == 1 select new {y.Nome}; */
     var z = 
       from Aluno y in t where y.Nascimento.Month == 1 select y;
-    foreach(Aluno y in z)
-      Console.WriteLine(y); 
+    Console.WriteLine(z.GetType());  
+    foreach(Aluno y in z) Console.WriteLine(y); 
+    //foreach(var y in z) Console.WriteLine(y); 
   }
 }
 
