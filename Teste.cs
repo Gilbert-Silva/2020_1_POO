@@ -8,10 +8,11 @@ class MainClass {
     c.list.Add(5);
     c.list.Add(3);
     c.list.Add(1);
-    c.Sort();
+    //c.Sort();
     Console.WriteLine(c.list[0]);
     Console.WriteLine(c.list[1]);
     Console.WriteLine(c.list[2]);
+    c.Sort();
     foreach(int i in c) Console.WriteLine(i);
   }
 }
