@@ -4,6 +4,27 @@ using System.Collections.Generic;
 
 class MainClass {
   public static void Main (string[] args) {
+    Frete a = new Frete();
+    Console.WriteLine(a.ValorFrete);
+    Frete b = new FreteExpresso();
+    Console.WriteLine(b.ValorFrete);
+  }
+}
+
+
+class Frete {
+  public virtual double ValorFrete { get => 10; }
+}
+
+class FreteExpresso : Frete {
+  public override double ValorFrete { get => 20; }
+}
+
+
+
+/*
+class MainClass {
+  public static void Main (string[] args) {
     Colecao<int> c = new Colecao<int>();
     c.list.Add(5);
     c.list.Add(3);
@@ -30,3 +51,4 @@ class Colecao<T> : IEnumerable<T> where T : IComparable<T> {
     return this.GetEnumerator();
   }
 }
+*/

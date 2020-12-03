@@ -12,12 +12,14 @@ class MainClass {
     while (s != "0") {
       if (s == "1") t = new Triangulo();
       if (s == "2") {
-        try {
+        try
+        {
           Console.WriteLine("Informe o valor da base");
           double b = double.Parse(Console.ReadLine());
           t.SetBase(b);
         }
-        catch (FormatException) {
+        catch (FormatException erro) {
+          Console.WriteLine(erro.Message);
           Console.WriteLine("O valor informado não é um número");
         }
         catch (ArgumentOutOfRangeException) {
@@ -26,8 +28,12 @@ class MainClass {
         catch (NullReferenceException) {
           Console.WriteLine("É necessário inciar o triângulo");
         }
-        catch (Exception erro) {
-          Console.WriteLine(erro.Message);
+        catch (DimensaoInvalidaException erro) {
+          Console.WriteLine($"O valor informado {erro.Valor} não pode ser negativo");
+        }
+        catch (Exception erro) 
+        {
+          //Console.WriteLine(erro.Message);
         }
       }
       if (s == "3") {
@@ -55,7 +61,12 @@ class Triangulo {
   public void SetBase(double v) {
     if (v > 0) b = v;
     else
-      throw new ArgumentOutOfRangeException("Base inválida");
+    {
+      DimensaoInvalidaException obj = new DimensaoInvalidaException("Dimensão Inválida");
+      obj.Valor = v;
+      throw obj;
+    }
+      //throw new ArgumentOutOfRangeException("Base inválida");
   }
   public double GetBase() {
     return b;
@@ -77,3 +88,10 @@ class Triangulo {
   }
 }
 
+class DimensaoInvalidaException : Exception {
+  public double Valor { get; set; }
+  public DimensaoInvalidaException(string Message) :
+    base("Dimensão Inválida") {
+
+    }
+}
