@@ -13,11 +13,11 @@ class MainClass {
 
 
 class Frete {
-  public virtual double ValorFrete { get => 10; }
+  public double ValorFrete { get => 10; }
 }
 
 class FreteExpresso : Frete {
-  public override double ValorFrete { get => 20; }
+  public double ValorFrete { get => 20; }
 }
 
 
