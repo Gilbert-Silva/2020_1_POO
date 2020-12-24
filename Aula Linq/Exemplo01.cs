@@ -3,16 +3,16 @@ using System.Collections.Generic;
 
 class MainClass {
   public static void Main (string[] args) {
-    TipagemImplicita();
-    TiposAnonimos();
-    InicializadorObjetos();
-    InicializadorColecoes();
-    InicializadorColecoesTiposAnonimos();
-    Delegado01();
-    Delegado02();
-    Delegado03();
-    Delegado04();
-    Delegado05();
+    //TipagemImplicita();
+    //TiposAnonimos();
+    //InicializadorObjetos();
+    //InicializadorColecoes();
+    //InicializadorColecoesTiposAnonimos();
+    //Delegado01();
+    //Delegado02();
+    //Delegado03();
+    //Delegado04();
+    //Delegado05();
     Delegado06();
   }
 

@@ -8,12 +8,12 @@ class MainClass {
   
   public static void Main (string[] args) {
     IniciarObjetos();
-    ExemploSelect();
-    ExemploWhere();
-    ExemploOrderBy();
-    ExemploThenBy();
-    ExemploCount();
-    ExemploDistinct();
+    //ExemploSelect();
+    //ExemploWhere();
+    //ExemploOrderBy();
+    //ExemploThenBy();
+    //ExemploCount();
+    //ExemploDistinct();
     ExemploJoin();
   }
 
